@@ -28,3 +28,43 @@ a {
     background: black;
   }
 }
+
+.retinablue {
+  background-color: #2e4faa;
+}
+
+.retinaorange {
+  background-color: #f0750b;
+}
+
+.retinayellow {
+  background-color: #fbc350;
+}
+
+.retinagray {
+  background-color: #e0e0e0;
+}
+
+.retinadarkgray {
+  background-color: #333333;
+}
+
+.retinabluetext {
+  color: #2e4faa;
+}
+
+.retinaorangetext {
+  color: #f0750b;
+}
+
+.retinayellowtext {
+  color: #fbc350;
+}
+
+.retinagraytext {
+  color: #e0e0e0;
+}
+
+.retinadarkgraytext {
+  color: #333333;
+}
