@@ -18,7 +18,7 @@ const ColumnItem = ({ columnitem, index, onDimensionDelete }) => {
           <CheckIcon className="h-4 w-4 mr-2 font-light self-start col-span-2" />
           <div className="text-xs font-thin col-span-5">{columnitem.id}</div>
           <div
-            className="col-span-1 float-right align-right cursor-pointer hover:text-red-600   active:text-black"
+            className="col-span-1 float-right align-right cursor-pointer hover:text-gray-400   active:text-gray-800"
             onClick={() => {
               onDimensionDelete(columnitem.id, index, "columnsList");
             }}

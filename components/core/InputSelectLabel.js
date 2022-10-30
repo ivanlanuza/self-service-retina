@@ -1,6 +1,6 @@
 const InputSelectLabel = ({ label, value, onChange, data, placeholder }) => (
   <div className="font-open px-4 py-5 ">
-    <div className="block text-xs font-bold ml-1 retinabluetext">{label}</div>
+    <div className="block text-xs font-light ml-1 text-gray-400">{label}</div>
     <div className="mt-0 text-sm text-gray-900 sm:mt-0 sm:col-span-2">
       <select
         className="form-select appearance-none

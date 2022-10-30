@@ -129,13 +129,13 @@ export default function Home() {
   return (
     <div className="grid grid-cols-10 gap-0 font-open bg-white">
       <div className="col-span-3 bg-gray-100 h-screen pt-4 pl-5 border-r border-gray-300">
-        <div className="mb-4 h-[450px] bg-white shadow-md border border-gray-200 rounded-lg max-w-sm dark:bg-gray-800 dark:border-gray-700">
+        <div className="mb-4 h-[400px] bg-white shadow-md border border-gray-200 rounded-lg max-w-sm dark:bg-gray-800 dark:border-gray-700">
           <div className="px-5 pt-3 pb-2">
             <h5 className="retinabluetext font-bold text-2xl tracking-tight mb-2 dark:text-white">
               Dimensions
             </h5>
-            <p className="font-normal text-gray-700 mb-3 dark:text-gray-400 text-xs">
-              Use dimensions as rows or columns by dragging from left.
+            <p className="font-normal text-gray-500 mb-3 dark:text-gray-400 text-xs">
+              Use dimensions as rows or columns by dragging fields over.
             </p>
             <DragDropContext onDragEnd={onDragEndDimensions}>
               <div className="grid grid-cols-2 gap-0 bg-white border-t border-gray-200">
@@ -152,7 +152,7 @@ export default function Home() {
                     <div className="text-md text-center pt-2 font-bold retinabluetext">
                       Rows
                     </div>
-                    <div className="mx-2 overflow-y-auto overflow-x-hidden text-xs font-medium text-gray-800 h-[140px] border border-gray-300 border-dashed">
+                    <div className="mx-2 overflow-y-auto overflow-x-hidden text-xs font-medium text-gray-800 h-[120px] border border-gray-300 border-dashed">
                       <RowList
                         rowset={statedata.rowsdata}
                         onDimensionDelete={onDimensionDelete}
@@ -163,7 +163,7 @@ export default function Home() {
                     <div className="text-md text-center pt-1 font-bold retinabluetext">
                       Columns
                     </div>
-                    <div className="mx-2 overflow-y-auto overflow-x-hidden text-xs font-medium text-gray-800  h-[140px]  border border-gray-300 border-dashed">
+                    <div className="mx-2 overflow-y-auto overflow-x-hidden text-xs font-medium text-gray-800  h-[120px]  border border-gray-300 border-dashed">
                       <ColumnList
                         columnset={statedata.columnsdata}
                         onDimensionDelete={onDimensionDelete}
@@ -176,20 +176,20 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="mb-4 h-[280px] bg-white shadow-md border border-gray-200 rounded-lg max-w-sm dark:bg-gray-800 dark:border-gray-700">
+        <div className="mb-4 h-[260px] bg-white shadow-md border border-gray-200 rounded-lg max-w-sm dark:bg-gray-800 dark:border-gray-700">
           <div className="px-5 pt-3 pb-2">
-            <h5 className="retinaorangetext font-bold text-2xl tracking-tight mb-2 dark:text-white">
+            <h5 className="retinayellowtext font-bold text-2xl tracking-tight mb-2 dark:text-white">
               Metrics
             </h5>
 
-            <p className="font-normal text-gray-700 mb-3 dark:text-gray-400 text-xs">
+            <p className="font-normal text-gray-500 mb-3 dark:text-gray-400 text-xs">
               Drag field from left to right to use it as data in report.
             </p>
             <DragDropContext onDragEnd={onDragEndMetrics}>
               <div className="grid grid-cols-2 gap-0 bg-white h-2/6 border-t border-gray-200">
                 <div className="col-span-1 h-full">
                   <div className="col-span-1 border-r border-gray-200 h-full">
-                    <div className="text-md text-center font-bold retinaorangetext pt-1">
+                    <div className="text-md text-center font-bold retinayellowtext pt-1">
                       Fields
                     </div>
                     <div className="text-xs font-medium text-gray-800">
@@ -198,10 +198,10 @@ export default function Home() {
                   </div>
                 </div>
                 <div className="col-span-1 h-full">
-                  <div className="text-md text-center pt-1 font-bold retinaorangetext">
+                  <div className="text-md text-center pt-1 font-bold retinayellowtext">
                     Data
                   </div>
-                  <div className="mx-2 overflow-y-auto overflow-x-hidden text-xs font-medium text-gray-800  h-[140px] border border-gray-300 border-dashed">
+                  <div className="mx-2 overflow-y-auto overflow-x-hidden text-xs font-medium text-gray-800  h-[120px] border border-gray-300 border-dashed">
                     <DataList
                       dataset={statedata.dataset}
                       onDataDelete={onDataDelete}
