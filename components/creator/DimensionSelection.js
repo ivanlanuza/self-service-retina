@@ -74,7 +74,7 @@ export default function DimensionSelection({ statedata, updateDataSet }) {
     return;
   };
   return (
-    <div className="mb-4 h-[400px] bg-white shadow-md border border-gray-200 rounded-lg max-w-sm dark:bg-gray-800 dark:border-gray-700">
+    <div className="mb-4 h-[370px] bg-white shadow-md border border-gray-200 rounded-lg max-w-sm dark:bg-gray-800 dark:border-gray-700">
       <div className="px-5 pt-3 pb-2">
         <h5 className="retinabluetext font-bold text-2xl tracking-tight mb-2 dark:text-white">
           Dimensions
@@ -97,7 +97,7 @@ export default function DimensionSelection({ statedata, updateDataSet }) {
                 <div className="text-md text-center pt-2 font-bold retinabluetext">
                   Rows
                 </div>
-                <div className="mx-2 overflow-y-auto overflow-x-hidden text-xs font-medium text-gray-800 h-[120px] border border-gray-300 border-dashed">
+                <div className="mx-2 overflow-y-auto overflow-x-hidden text-xs font-medium text-gray-800 h-[100px] border border-gray-300 border-dashed">
                   <RowList
                     rowset={statedata.rowsdata}
                     onDimensionDelete={onDimensionDelete}
@@ -108,7 +108,7 @@ export default function DimensionSelection({ statedata, updateDataSet }) {
                 <div className="text-md text-center pt-1 font-bold retinabluetext">
                   Columns
                 </div>
-                <div className="mx-2 overflow-y-auto overflow-x-hidden text-xs font-medium text-gray-800  h-[120px]  border border-gray-300 border-dashed">
+                <div className="mx-2 overflow-y-auto overflow-x-hidden text-xs font-medium text-gray-800  h-[100px]  border border-gray-300 border-dashed">
                   <ColumnList
                     columnset={statedata.columnsdata}
                     onDimensionDelete={onDimensionDelete}

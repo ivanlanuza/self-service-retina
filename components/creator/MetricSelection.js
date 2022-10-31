@@ -42,7 +42,7 @@ export default function MetricSelection({ statedata, updateDataSet }) {
   };
 
   return (
-    <div className="mb-4 h-[260px] bg-white shadow-md border border-gray-200 rounded-lg max-w-sm dark:bg-gray-800 dark:border-gray-700">
+    <div className="mb-4 h-[250px] bg-white shadow-md border border-gray-200 rounded-lg max-w-sm dark:bg-gray-800 dark:border-gray-700">
       <div className="px-5 pt-3 pb-2">
         <h5 className="retinayellowtext font-bold text-2xl tracking-tight mb-2 dark:text-white">
           Metrics
@@ -67,7 +67,7 @@ export default function MetricSelection({ statedata, updateDataSet }) {
               <div className="text-md text-center pt-1 font-bold retinayellowtext">
                 Data
               </div>
-              <div className="mx-2 overflow-y-auto overflow-x-hidden text-xs font-medium text-gray-800  h-[120px] border border-gray-300 border-dashed">
+              <div className="mx-2 overflow-y-auto overflow-x-hidden text-xs font-medium text-gray-800  h-[130px] border border-gray-300 border-dashed">
                 <DataList
                   dataset={statedata.dataset}
                   onDataDelete={onDataDelete}

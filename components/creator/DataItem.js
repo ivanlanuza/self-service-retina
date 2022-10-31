@@ -11,8 +11,8 @@ const DataItem = ({ dataitem, index, onDataDelete }) => {
           ref={draggableProvided.innerRef}
           className={`mx-2 pb-1 pt-1 grid grid-cols-8 ${
             draggableSnapshot.isDragging
-              ? "mb-2 px-2 rounded-sm text-white retinayellow "
-              : "mb-2 px-2 rounded-sm text-white retinayellow"
+              ? "mb-1 px-2 rounded-sm text-white retinayellow "
+              : "mb-1 px-2 rounded-sm text-white retinayellow"
           } `}
         >
           <CheckIcon className="h-4 w-4 mr-2 font-light self-start col-span-2" />
