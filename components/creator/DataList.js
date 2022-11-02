@@ -8,9 +8,7 @@ const DataList = ({ dataset, onDataDelete }) => {
         <div
           ref={droppableProvided.innerRef}
           {...droppableProvided.droppableProps}
-          className={`h-full pt-2 ${
-            droppableSnapshot.isDraggingOver ? "bg-white" : "bg-white"
-          }`}
+          className={`h-full pt-2 `}
         >
           <div>
             {dataset.map((dataitem, index) => (

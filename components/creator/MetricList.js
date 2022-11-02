@@ -9,9 +9,7 @@ const MetricList = ({ metrics }) => {
         <div
           ref={droppableProvided.innerRef}
           {...droppableProvided.droppableProps}
-          className={`grow min-h-[100px] p-2 ${
-            droppableSnapshot.isDraggingOver ? "bg-white" : "bg-white"
-          }`}
+          className={`grow min-h-[100px] p-2 `}
         >
           <div>
             {metrics.map((metric, index) => (

@@ -74,7 +74,7 @@ export default function DimensionSelection({ statedata, updateDataSet }) {
     return;
   };
   return (
-    <div className="mb-4 h-[370px] bg-white shadow-md border border-gray-200 rounded-lg max-w-sm dark:bg-gray-800 dark:border-gray-700">
+    <div className="mb-4 h-[370px] max-w-sm ">
       <div className="px-5 pt-3 pb-2">
         <h5 className="retinabluetext font-bold text-2xl tracking-tight mb-2 dark:text-white">
           Dimensions
@@ -83,7 +83,7 @@ export default function DimensionSelection({ statedata, updateDataSet }) {
           Use dimensions as rows or columns by dragging fields over.
         </p>
         <DragDropContext onDragEnd={onDragEndDimensions}>
-          <div className="grid grid-cols-2 gap-0 bg-white border-t border-gray-200">
+          <div className="grid grid-cols-2 gap-0  border-t border-gray-200">
             <div className="col-span-1 h-full border-r border-gray-200">
               <div className="text-md pt-2 text-center font-bold retinabluetext ">
                 Fields

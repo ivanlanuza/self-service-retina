@@ -8,9 +8,7 @@ const DimensionList = ({ dimensions }) => {
         <div
           ref={droppableProvided.innerRef}
           {...droppableProvided.droppableProps}
-          className={`grow min-h-[100px] p-2 ${
-            droppableSnapshot.isDraggingOver ? "bg-white" : "bg-white"
-          }`}
+          className={`grow min-h-[100px] p-2`}
         >
           <div>
             {dimensions.map((dimension, index) => (
